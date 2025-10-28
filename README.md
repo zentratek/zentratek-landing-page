@@ -48,10 +48,17 @@ Landing page moderna y profesional para ZentraTek - Automatización, IA y Cloud 
    - Abre `index.html` directamente en tu navegador
    - O usa un servidor local como Live Server (VS Code extension)
 
+5. **Probar el build localmente (opcional)**
+   ```bash
+   npm run build  # Construye el proyecto
+   npm start      # Sirve desde /dist en http://localhost:8080
+   ```
+
 ## 📦 Comandos Disponibles
 
 | Comando | Descripción |
 |---------|-------------|
+| `npm start` | Inicia servidor HTTP para servir archivos estáticos desde `/dist` (puerto 8080 por defecto) |
 | `npm run dev` | Inicia Tailwind en modo watch para desarrollo |
 | `npm run build` | Construye para producción (minifica CSS y copia archivos a `/dist`) |
 
@@ -76,17 +83,20 @@ Landing page moderna y profesional para ZentraTek - Automatización, IA y Cloud 
    - Selecciona el repo `zentratek-landing-page`
 
 3. **Configura el Build**
-   - **Resource Type**: Static Site
+   - **Resource Type**: Web Service
    - **Branch**: `main`
    - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
+   - **Run Command**: `npm start` (DigitalOcean lo detecta automáticamente)
+   - DigitalOcean asignará automáticamente el puerto via variable `$PORT`
 
 4. **Configura el Plan**
-   - Selecciona "Starter" (Gratis para sitios estáticos)
+   - Selecciona "Basic" (el plan más económico)
+   - Para sitios con bajo tráfico, el costo es mínimo
 
 5. **Deploy**
    - Click "Next" y luego "Create Resources"
    - DigitalOcean construirá y desplegará automáticamente
+   - El proceso toma unos 2-3 minutos
 
 6. **Dominio Personalizado (Opcional)**
    - En la página de tu App, ve a "Settings" > "Domains"

@@ -8,15 +8,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Tech Stack**: HTML5, Tailwind CSS 3, Vanilla JavaScript, Lucide Icons
 
-**Deployment**: DigitalOcean App Platform (static site)
+**Deployment**: DigitalOcean App Platform (Web Service with `serve` for static files)
 
 ## Project Architecture
 
 ### Build System
 - **Tailwind CSS** processes `assets/css/input.css` → `dist/assets/css/tailwind.css`
-- **Build output** goes to `/dist/` directory (required by DigitalOcean)
+- **Build output** goes to `/dist/` directory (served by `serve` package in production)
 - **Dev workflow**: Watch mode compiles CSS on save
 - **Production build**: Minifies CSS, copies HTML/JS/images to dist
+- **Production server**: `serve` package serves static files from `/dist` on port assigned by DigitalOcean
 
 ### File Structure
 ```
@@ -81,26 +82,27 @@ npm run dev          # Start Tailwind watch mode (for development)
 ```
 Then open `index.html` in browser (use Live Server or similar).
 
-### Production Build
+### Production Build & Testing
 ```bash
 npm run build        # Minify CSS, copy files to /dist
+npm start            # Serve /dist folder on http://localhost:8080
 ```
-Output in `/dist` is ready for deployment.
-
-### Testing Build Locally
-After `npm run build`, serve the `/dist` folder:
-```bash
-cd dist
-python3 -m http.server 8000  # Or any static server
-```
+The `serve` package is used to serve static files in production.
 
 ## Deployment to DigitalOcean
 
 ### Configuration
-- **Resource Type**: Static Site
+- **Resource Type**: Web Service (uses `serve` package to serve static files)
 - **Build Command**: `npm run build`
-- **Output Directory**: `dist`
+- **Run Command**: `npm start` (auto-detected from package.json)
 - **Branch**: `main`
+- **Port**: Automatically assigned via `$PORT` environment variable
+
+### How it Works
+1. DigitalOcean runs `npm install` (installs both dev and production dependencies)
+2. Runs `npm run build` (compiles Tailwind CSS, copies files to `/dist`)
+3. Runs `npm start` (starts `serve` HTTP server on port assigned by DigitalOcean)
+4. Site is accessible via the assigned URL
 
 ### Auto-Deploy
 Push to `main` branch triggers automatic rebuild:
@@ -112,7 +114,7 @@ git push origin main
 
 ### Environment
 - Node.js 16+ required
-- No environment variables needed (static site)
+- `$PORT` variable automatically provided by DigitalOcean
 
 ## Content Management
 
