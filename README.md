@@ -224,7 +224,7 @@ El formulario actualmente es solo frontend. Para que funcione, necesitas:
 
 ```html
 <!-- En index.html, actualiza el form action -->
-<form action="https://formsubmit.co/contacto@zentratek.com" method="POST">
+<form action="https://formsubmit.co/consultoria@zentratek.com" method="POST">
   <!-- Campos del formulario -->
 </form>
 ```
@@ -264,7 +264,7 @@ Genera un `sitemap.xml` cuando tengas más páginas:
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://zentratek.com/</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2025-01-01</lastmod>
     <priority>1.0</priority>
   </url>
 </urlset>
@@ -321,7 +321,7 @@ console.log(typeof lucide);  // Debería ser 'object'
 ## 📞 Soporte
 
 Para preguntas o issues:
-- Email: contacto@zentratek.com
+- Email: consultoria@zentratek.com
 - GitHub Issues: [Crear issue](https://github.com/tu-usuario/zentratek-landing-page/issues)
 
 ## 📄 Licencia

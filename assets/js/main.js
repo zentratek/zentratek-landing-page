@@ -263,5 +263,5 @@ if (prefersReducedMotion.matches) {
 // Console Welcome Message (Optional Easter Egg)
 // ============================================
 console.log('%c¡Hola! 👋', 'font-size: 20px; font-weight: bold; color: #0066FF;');
-console.log('%c¿Te interesa trabajar con nosotros? Envíanos un mensaje a contacto@zentratek.com', 'font-size: 14px; color: #00D9B1;');
+console.log('%c¿Te interesa trabajar con nosotros? Envíanos un mensaje a consultoria@zentratek.com', 'font-size: 14px; color: #00D9B1;');
 console.log('%cZentraTek - Tecnología sencilla, equilibrada y eficiente', 'font-size: 12px; color: #6C757D;');
