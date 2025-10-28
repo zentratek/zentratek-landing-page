@@ -85,7 +85,28 @@
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#servicios" class="text-neutral-700 hover:text-primary-500 transition-colors font-medium">Servicios</a>
                     <a href="#industrias" class="text-neutral-700 hover:text-primary-500 transition-colors font-medium">Industrias</a>
-                    <a href="#casos-exito" class="text-neutral-700 hover:text-primary-500 transition-colors font-medium">Casos de Éxito</a>
+
+                    <!-- Casos de Éxito Dropdown -->
+                    <div class="relative group">
+                        <button class="text-neutral-700 hover:text-primary-500 transition-colors font-medium flex items-center gap-1">
+                            Casos de Éxito
+                            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <!-- Dropdown Menu -->
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <div class="py-2">
+                                <a href="/caso-bonsana.html" class="block px-4 py-3 hover:bg-neutral-50 transition-colors">
+                                    <div class="font-semibold text-neutral-800">Clínica Bonsana</div>
+                                    <div class="text-sm text-neutral-600">Auditoría médica con IA</div>
+                                </a>
+                                <a href="#casos-exito" class="block px-4 py-3 hover:bg-neutral-50 transition-colors">
+                                    <div class="font-semibold text-neutral-800">Ver Todos</div>
+                                    <div class="text-sm text-neutral-600">Más casos de éxito</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     <a href="#contacto" class="btn btn-primary">Consultoría Gratuita</a>
                 </div>
 
@@ -101,7 +122,23 @@
             <div class="container-custom py-4 space-y-4">
                 <a href="#servicios" class="block text-neutral-700 hover:text-primary-500 transition-colors font-medium">Servicios</a>
                 <a href="#industrias" class="block text-neutral-700 hover:text-primary-500 transition-colors font-medium">Industrias</a>
-                <a href="#casos-exito" class="block text-neutral-700 hover:text-primary-500 transition-colors font-medium">Casos de Éxito</a>
+
+                <!-- Casos de Éxito Submenu -->
+                <div>
+                    <button id="mobile-casos-toggle" class="w-full text-left text-neutral-700 hover:text-primary-500 transition-colors font-medium flex items-center justify-between">
+                        Casos de Éxito
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform" id="mobile-casos-icon"></i>
+                    </button>
+                    <div id="mobile-casos-menu" class="hidden mt-2 ml-4 space-y-2">
+                        <a href="/caso-bonsana.html" class="block text-sm text-neutral-600 hover:text-primary-500 transition-colors py-2">
+                            → Clínica Bonsana
+                        </a>
+                        <a href="#casos-exito" class="block text-sm text-neutral-600 hover:text-primary-500 transition-colors py-2">
+                            → Ver Todos
+                        </a>
+                    </div>
+                </div>
+
                 <a href="#contacto" class="btn btn-primary w-full">Consultoría Gratuita</a>
             </div>
         </div>

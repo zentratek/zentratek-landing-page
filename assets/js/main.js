@@ -28,6 +28,18 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // Mobile "Casos de Éxito" Dropdown Toggle
+    const mobileCasosToggle = document.getElementById('mobile-casos-toggle');
+    const mobileCasosMenu = document.getElementById('mobile-casos-menu');
+    const mobileCasosIcon = document.getElementById('mobile-casos-icon');
+
+    if (mobileCasosToggle && mobileCasosMenu) {
+        mobileCasosToggle.addEventListener('click', function() {
+            mobileCasosMenu.classList.toggle('hidden');
+            mobileCasosIcon.classList.toggle('rotate-180');
+        });
+    }
 });
 
 // ============================================
