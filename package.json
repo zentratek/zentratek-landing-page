@@ -1,0 +1,26 @@
+{
+  "name": "zentratek-website",
+  "version": "1.0.0",
+  "description": "ZentraTek - Landing page for automation, AI and cloud services",
+  "main": "index.html",
+  "scripts": {
+    "dev": "tailwindcss -i ./assets/css/input.css -o ./dist/assets/css/tailwind.css --watch",
+    "build": "tailwindcss -i ./assets/css/input.css -o ./dist/assets/css/tailwind.css --minify && npm run copy-files",
+    "copy-files": "cp *.html dist/ 2>/dev/null || true && cp -r assets/js dist/assets/ 2>/dev/null || true && cp -r assets/images dist/assets/ 2>/dev/null || true && mkdir -p dist/assets/css dist/assets/js dist/assets/images"
+  },
+  "keywords": [
+    "automation",
+    "ai",
+    "cloud",
+    "devops",
+    "crm",
+    "colombia"
+  ],
+  "author": "ZentraTek",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0"
+  }
+}
