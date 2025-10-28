@@ -613,158 +613,253 @@
         <!-- Contact / CTA Section -->
         <section id="contacto" class="section bg-white">
             <div class="container-custom">
-                <div class="grid md:grid-cols-2 gap-12 items-start">
-                    <!-- Contact Info -->
-                    <div class="fade-in-element">
-                        <h2 class="text-3xl md:text-4xl font-heading font-bold text-neutral-800 mb-4">
-                            ¿Listo para Transformar tu Negocio?
-                        </h2>
-                        <p class="text-lg text-neutral-600 mb-8">
-                            Agenda una consultoría gratuita y descubre cómo la automatización e IA pueden impulsar tu crecimiento.
-                        </p>
+                <!-- Header -->
+                <div class="text-center mb-12 fade-in-element">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-neutral-800 mb-4">
+                        ¿Listo para Transformar tu Negocio?
+                    </h2>
+                    <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
+                        Agenda una consultoría gratuita de 30 minutos y descubre cómo la automatización e IA pueden impulsar tu crecimiento.
+                    </p>
+                </div>
 
-                        <div class="space-y-6">
-                            <div class="flex items-start gap-4">
-                                <div class="bg-primary-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <i data-lucide="mail" class="w-6 h-6 text-primary-500"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold mb-1">Email</h4>
-                                    <a href="mailto:contacto@zentratek.com" class="text-neutral-600 hover:text-primary-500 transition-colors">
-                                        contacto@zentratek.com
-                                    </a>
+                <!-- Primary CTA: Google Calendar -->
+                <div class="max-w-4xl mx-auto mb-16 fade-in-element">
+                    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary-500 via-primary-600 to-secondary-500 p-8 md:p-12 text-white shadow-2xl">
+                        <!-- Decorative elements -->
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+                        <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary-500/20 rounded-full blur-3xl -ml-32 -mb-32"></div>
+
+                        <div class="relative z-10">
+                            <div class="flex items-center justify-center mb-6">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-4">
+                                    <i data-lucide="calendar-check" class="w-12 h-12"></i>
                                 </div>
                             </div>
 
-                            <div class="flex items-start gap-4">
-                                <div class="bg-secondary-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <i data-lucide="map-pin" class="w-6 h-6 text-secondary-500"></i>
+                            <h3 class="text-2xl md:text-3xl font-heading font-bold text-center mb-4">
+                                Agenda tu Consultoría Gratuita
+                            </h3>
+
+                            <p class="text-center text-lg opacity-90 mb-8 max-w-2xl mx-auto">
+                                Selecciona el día y hora que mejor te convenga. ¡Es simple, rápido y sin compromiso!
+                            </p>
+
+                            <!-- Benefits -->
+                            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="clock" class="w-5 h-5 flex-shrink-0 mt-1"></i>
+                                    <div>
+                                        <p class="font-semibold mb-1">30 minutos</p>
+                                        <p class="text-sm opacity-90">Sesión enfocada en tus necesidades</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold mb-1">Ubicación</h4>
-                                    <p class="text-neutral-600">Valle del Cauca, Colombia</p>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="video" class="w-5 h-5 flex-shrink-0 mt-1"></i>
+                                    <div>
+                                        <p class="font-semibold mb-1">100% Virtual</p>
+                                        <p class="text-sm opacity-90">Google Meet incluido</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="sparkles" class="w-5 h-5 flex-shrink-0 mt-1"></i>
+                                    <div>
+                                        <p class="font-semibold mb-1">Sin costo</p>
+                                        <p class="text-sm opacity-90">Análisis inicial gratuito</p>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="flex items-start gap-4">
-                                <div class="bg-accent-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <i data-lucide="phone" class="w-6 h-6 text-accent-500"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold mb-1">WhatsApp</h4>
-                                    <a href="https://wa.me/57XXXXXXXXXX" class="text-neutral-600 hover:text-primary-500 transition-colors">
-                                        +57 XXX XXX XXXX
-                                    </a>
-                                </div>
+                            <!-- CTA Button -->
+                            <div class="text-center">
+                                <a href="https://calendar.app.google/ovjYp6tHmKcNmY2ZA"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="inline-flex items-center gap-3 bg-white text-primary-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-neutral-50 hover:scale-105 transition-all duration-300 shadow-xl">
+                                    <i data-lucide="calendar" class="w-6 h-6"></i>
+                                    Agendar Ahora
+                                    <i data-lucide="arrow-right" class="w-6 h-6"></i>
+                                </a>
+                                <p class="text-sm opacity-75 mt-4">
+                                    <i data-lucide="shield-check" class="w-4 h-4 inline mr-1"></i>
+                                    Selecciona tu horario preferido en tiempo real
+                                </p>
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Social Links -->
-                        <div class="mt-8 pt-8 border-t border-neutral-200">
-                            <h4 class="font-semibold mb-4">Síguenos en redes</h4>
-                            <div class="flex gap-4">
-                                <a href="https://linkedin.com/company/zentratek" target="_blank" rel="noopener noreferrer"
-                                   class="bg-neutral-100 hover:bg-primary-500 hover:text-white w-10 h-10 rounded-lg flex items-center justify-center transition-colors"
-                                   aria-label="LinkedIn">
-                                    <i data-lucide="linkedin" class="w-5 h-5"></i>
-                                </a>
-                                <a href="https://instagram.com/zentratek" target="_blank" rel="noopener noreferrer"
-                                   class="bg-neutral-100 hover:bg-primary-500 hover:text-white w-10 h-10 rounded-lg flex items-center justify-center transition-colors"
-                                   aria-label="Instagram">
-                                    <i data-lucide="instagram" class="w-5 h-5"></i>
-                                </a>
-                                <a href="https://twitter.com/zentratek" target="_blank" rel="noopener noreferrer"
-                                   class="bg-neutral-100 hover:bg-primary-500 hover:text-white w-10 h-10 rounded-lg flex items-center justify-center transition-colors"
-                                   aria-label="Twitter">
-                                    <i data-lucide="twitter" class="w-5 h-5"></i>
-                                </a>
+                <!-- Divider -->
+                <div class="flex items-center gap-4 max-w-2xl mx-auto mb-12 fade-in-element">
+                    <div class="flex-1 border-t border-neutral-300"></div>
+                    <p class="text-neutral-500 font-medium">o si prefieres</p>
+                    <div class="flex-1 border-t border-neutral-300"></div>
+                </div>
+
+                <!-- Secondary Options: Form + Contact Info -->
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Contact Form -->
+                    <div class="fade-in-element">
+                        <div class="bg-neutral-50 rounded-xl p-6 md:p-8 border border-neutral-200">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="bg-primary-100 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="mail" class="w-5 h-5 text-primary-500"></i>
+                                </div>
+                                <h3 class="text-xl font-heading font-semibold text-neutral-800">Envíanos un Mensaje</h3>
+                            </div>
+
+                            <form id="contact-form" class="space-y-4">
+                                <div>
+                                    <label for="nombre" class="block text-sm font-semibold text-neutral-700 mb-2">
+                                        Nombre completo *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="nombre"
+                                        name="nombre"
+                                        required
+                                        class="w-full px-4 py-2.5 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-sm"
+                                        placeholder="Tu nombre">
+                                </div>
+
+                                <div>
+                                    <label for="email" class="block text-sm font-semibold text-neutral-700 mb-2">
+                                        Email *
+                                    </label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        required
+                                        class="w-full px-4 py-2.5 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-sm"
+                                        placeholder="tu@email.com">
+                                </div>
+
+                                <div>
+                                    <label for="mensaje" class="block text-sm font-semibold text-neutral-700 mb-2">
+                                        Mensaje *
+                                    </label>
+                                    <textarea
+                                        id="mensaje"
+                                        name="mensaje"
+                                        rows="3"
+                                        required
+                                        class="w-full px-4 py-2.5 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none text-sm"
+                                        placeholder="Cuéntanos brevemente sobre tu proyecto..."></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary w-full">
+                                    <span class="flex items-center justify-center gap-2">
+                                        Enviar Mensaje
+                                        <i data-lucide="send" class="w-4 h-4"></i>
+                                    </span>
+                                </button>
+
+                                <p class="text-xs text-neutral-500 text-center">
+                                    Responderemos en menos de 24 horas
+                                </p>
+                            </form>
+
+                            <!-- Success Message -->
+                            <div id="form-success" class="hidden mt-4 p-4 bg-secondary-100 text-secondary-700 rounded-lg">
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-5 h-5"></i>
+                                    <p class="font-semibold">¡Mensaje enviado!</p>
+                                </div>
+                                <p class="text-sm mt-1">Te contactaremos pronto.</p>
+                            </div>
+
+                            <!-- Error Message -->
+                            <div id="form-error" class="hidden mt-4 p-4 bg-red-100 text-red-700 rounded-lg">
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="alert-circle" class="w-5 h-5"></i>
+                                    <p class="font-semibold">Error al enviar</p>
+                                </div>
+                                <p class="text-sm mt-1">Intenta nuevamente o contáctanos por email.</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Contact Form -->
-                    <div class="card p-8 fade-in-element">
-                        <h3 class="text-2xl font-heading font-bold mb-6">Solicita una Consultoría Gratuita</h3>
-                        <form id="contact-form" class="space-y-6">
-                            <div>
-                                <label for="nombre" class="block text-sm font-semibold text-neutral-700 mb-2">
-                                    Nombre completo *
-                                </label>
-                                <input
-                                    type="text"
-                                    id="nombre"
-                                    name="nombre"
-                                    required
-                                    class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                                    placeholder="Tu nombre">
+                    <!-- Contact Info & Social -->
+                    <div class="fade-in-element">
+                        <div class="bg-neutral-50 rounded-xl p-6 md:p-8 border border-neutral-200 h-full">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="bg-secondary-100 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="info" class="w-5 h-5 text-secondary-500"></i>
+                                </div>
+                                <h3 class="text-xl font-heading font-semibold text-neutral-800">Información de Contacto</h3>
                             </div>
 
-                            <div>
-                                <label for="email" class="block text-sm font-semibold text-neutral-700 mb-2">
-                                    Email *
-                                </label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    required
-                                    class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                                    placeholder="tu@email.com">
+                            <div class="space-y-6">
+                                <div class="flex items-start gap-4">
+                                    <div class="bg-white w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                                        <i data-lucide="mail" class="w-5 h-5 text-primary-500"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-sm text-neutral-700 mb-1">Email</h4>
+                                        <a href="mailto:contacto@zentratek.com" class="text-neutral-600 hover:text-primary-500 transition-colors text-sm">
+                                            contacto@zentratek.com
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="bg-white w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                                        <i data-lucide="map-pin" class="w-5 h-5 text-secondary-500"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-sm text-neutral-700 mb-1">Ubicación</h4>
+                                        <p class="text-neutral-600 text-sm">Valle del Cauca, Colombia</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="bg-white w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                                        <i data-lucide="phone" class="w-5 h-5 text-accent-500"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-sm text-neutral-700 mb-1">WhatsApp</h4>
+                                        <a href="https://wa.me/57XXXXXXXXXX" class="text-neutral-600 hover:text-primary-500 transition-colors text-sm">
+                                            +57 XXX XXX XXXX
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Social Links -->
+                                <div class="pt-6 border-t border-neutral-200">
+                                    <h4 class="font-semibold text-sm text-neutral-700 mb-3">Síguenos en redes</h4>
+                                    <div class="flex gap-3">
+                                        <a href="https://linkedin.com/company/zentratek" target="_blank" rel="noopener noreferrer"
+                                           class="bg-white hover:bg-primary-500 hover:text-white w-10 h-10 rounded-lg flex items-center justify-center transition-colors shadow-sm"
+                                           aria-label="LinkedIn">
+                                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                                        </a>
+                                        <a href="https://instagram.com/zentratek" target="_blank" rel="noopener noreferrer"
+                                           class="bg-white hover:bg-primary-500 hover:text-white w-10 h-10 rounded-lg flex items-center justify-center transition-colors shadow-sm"
+                                           aria-label="Instagram">
+                                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                                        </a>
+                                        <a href="https://twitter.com/zentratek" target="_blank" rel="noopener noreferrer"
+                                           class="bg-white hover:bg-primary-500 hover:text-white w-10 h-10 rounded-lg flex items-center justify-center transition-colors shadow-sm"
+                                           aria-label="Twitter">
+                                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Trust Badge -->
+                                <div class="pt-6 border-t border-neutral-200">
+                                    <div class="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-lg p-4">
+                                        <div class="flex items-center gap-3 mb-2">
+                                            <i data-lucide="shield-check" class="w-5 h-5 text-primary-500"></i>
+                                            <p class="font-semibold text-sm text-neutral-800">Soporte 24/7</p>
+                                        </div>
+                                        <p class="text-xs text-neutral-600">
+                                            Estamos disponibles para ayudarte en cada paso de tu transformación digital.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div>
-                                <label for="empresa" class="block text-sm font-semibold text-neutral-700 mb-2">
-                                    Empresa
-                                </label>
-                                <input
-                                    type="text"
-                                    id="empresa"
-                                    name="empresa"
-                                    class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                                    placeholder="Tu empresa">
-                            </div>
-
-                            <div>
-                                <label for="mensaje" class="block text-sm font-semibold text-neutral-700 mb-2">
-                                    ¿Cómo podemos ayudarte? *
-                                </label>
-                                <textarea
-                                    id="mensaje"
-                                    name="mensaje"
-                                    rows="4"
-                                    required
-                                    class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
-                                    placeholder="Cuéntanos sobre tu proyecto o necesidad..."></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary btn-lg w-full">
-                                <span class="flex items-center justify-center gap-2">
-                                    Enviar Consulta
-                                    <i data-lucide="send" class="w-5 h-5"></i>
-                                </span>
-                            </button>
-
-                            <p class="text-xs text-neutral-500 text-center">
-                                Al enviar este formulario, aceptas nuestra política de privacidad
-                            </p>
-                        </form>
-
-                        <!-- Success Message (hidden by default) -->
-                        <div id="form-success" class="hidden mt-6 p-4 bg-secondary-100 text-secondary-700 rounded-lg">
-                            <div class="flex items-center gap-2">
-                                <i data-lucide="check-circle" class="w-5 h-5"></i>
-                                <p class="font-semibold">¡Mensaje enviado con éxito!</p>
-                            </div>
-                            <p class="text-sm mt-1">Nos pondremos en contacto contigo pronto.</p>
-                        </div>
-
-                        <!-- Error Message (hidden by default) -->
-                        <div id="form-error" class="hidden mt-6 p-4 bg-red-100 text-red-700 rounded-lg">
-                            <div class="flex items-center gap-2">
-                                <i data-lucide="alert-circle" class="w-5 h-5"></i>
-                                <p class="font-semibold">Error al enviar el mensaje</p>
-                            </div>
-                            <p class="text-sm mt-1">Por favor, intenta nuevamente o contáctanos por email.</p>
                         </div>
                     </div>
                 </div>
