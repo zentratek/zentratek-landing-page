@@ -94,67 +94,46 @@ window.addEventListener('scroll', function() {
 });
 
 // ============================================
-// Contact Form Handling
+// Contact Form Handling (FormSubmit.co)
 // ============================================
 const contactForm = document.getElementById('contact-form');
-const formSuccess = document.getElementById('form-success');
-const formError = document.getElementById('form-error');
 
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-
         // Get form data
         const formData = new FormData(contactForm);
         const data = {
             nombre: formData.get('nombre'),
             email: formData.get('email'),
-            empresa: formData.get('empresa'),
             mensaje: formData.get('mensaje')
         };
 
-        // Basic validation
+        // Basic validation - only prevent if there are errors
         if (!validateEmail(data.email)) {
-            showFormMessage('error', 'Por favor, ingresa un email válido.');
+            e.preventDefault();
+            alert('Por favor, ingresa un email válido.');
             return;
         }
 
         if (data.nombre.trim().length < 2) {
-            showFormMessage('error', 'Por favor, ingresa tu nombre completo.');
+            e.preventDefault();
+            alert('Por favor, ingresa tu nombre completo.');
             return;
         }
 
         if (data.mensaje.trim().length < 10) {
-            showFormMessage('error', 'Por favor, escribe un mensaje más detallado.');
+            e.preventDefault();
+            alert('Por favor, escribe un mensaje más detallado (mínimo 10 caracteres).');
             return;
         }
 
-        // Show loading state
+        // Validation passed - show loading state and let form submit normally
         const submitButton = contactForm.querySelector('button[type="submit"]');
-        const originalButtonText = submitButton.innerHTML;
         submitButton.disabled = true;
         submitButton.innerHTML = '<span class="flex items-center justify-center gap-2">Enviando...</span>';
 
-        // Simulate form submission (replace with actual API call)
-        setTimeout(() => {
-            // Here you would normally send the data to your backend
-            // Example: fetch('/api/contact', { method: 'POST', body: JSON.stringify(data) })
-
-            console.log('Form data:', data);
-
-            // Show success message
-            showFormMessage('success');
-            contactForm.reset();
-
-            // Reset button
-            submitButton.disabled = false;
-            submitButton.innerHTML = originalButtonText;
-
-            // Reinitialize Lucide icons for the button
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
-            }
-        }, 1500);
+        // Form will submit normally to FormSubmit.co (don't prevent default here!)
+        // User will be redirected to FormSubmit's thank you page
     });
 }
 

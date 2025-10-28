@@ -713,7 +713,17 @@
                                 <h3 class="text-xl font-heading font-semibold text-neutral-800">Envíanos un Mensaje</h3>
                             </div>
 
-                            <form id="contact-form" class="space-y-4">
+                            <form id="contact-form"
+                                  action="https://formsubmit.co/consultoria@zentratek.com"
+                                  method="POST"
+                                  class="space-y-4">
+
+                                <!-- FormSubmit Configuration (Hidden Fields) -->
+                                <input type="hidden" name="_subject" value="Nuevo mensaje desde ZentraTek.com">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="box">
+                                <input type="text" name="_honey" style="display:none">
+
                                 <div>
                                     <label for="nombre" class="block text-sm font-semibold text-neutral-700 mb-2">
                                         Nombre completo *
