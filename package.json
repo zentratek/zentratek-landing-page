@@ -4,10 +4,10 @@
   "description": "ZentraTek - Landing page for automation, AI and cloud services",
   "main": "index.html",
   "scripts": {
-    "start": "serve dist -l ${PORT:-8080}",
+    "start": "serve dist -l ${PORT:-8080} -c serve.json",
     "dev": "tailwindcss -i ./assets/css/input.css -o ./dist/assets/css/tailwind.css --watch",
     "build": "tailwindcss -i ./assets/css/input.css -o ./dist/assets/css/tailwind.css --minify && npm run copy-files",
-    "copy-files": "cp *.html dist/ 2>/dev/null || true && cp -r assets/js dist/assets/ 2>/dev/null || true && cp -r assets/images dist/assets/ 2>/dev/null || true && mkdir -p dist/assets/css dist/assets/js dist/assets/images"
+    "copy-files": "mkdir -p dist/assets/css dist/assets/js dist/assets/images && cp *.html dist/ 2>/dev/null || true && cp robots.txt sitemap.xml serve.json dist/ 2>/dev/null || true && cp -r assets/js dist/assets/ 2>/dev/null || true && cp -r assets/images dist/assets/ 2>/dev/null || true"
   },
   "keywords": [
     "automation",

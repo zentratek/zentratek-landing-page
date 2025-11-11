@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Bloquear URLs antiguas de WordPress
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /?page_id=*
+Disallow: /?p=*
+
+# Sitemap
+Sitemap: https://zentratek.com/sitemap.xml
