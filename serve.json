@@ -4,41 +4,20 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "query",
-          "key": "page_id"
-        }
-      ],
-      "destination": "/",
-      "permanent": true
+      "source": "/wp-admin",
+      "destination": "/"
     },
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "query",
-          "key": "p"
-        }
-      ],
-      "destination": "/",
-      "permanent": true
+      "source": "/wp-admin/**",
+      "destination": "/"
     },
     {
-      "source": "/wp-admin/:path*",
-      "destination": "/",
-      "permanent": true
+      "source": "/wp-content/**",
+      "destination": "/"
     },
     {
-      "source": "/wp-content/:path*",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/wp-includes/:path*",
-      "destination": "/",
-      "permanent": true
+      "source": "/wp-includes/**",
+      "destination": "/"
     }
   ],
   "headers": [
